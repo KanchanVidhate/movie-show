@@ -1,0 +1,31 @@
+.movie-card{
+    height: 350px;
+    width: 250px;
+    border: solid;
+    border-radius: 20px;
+    
+}
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 19px;
+}
+.movie-card-info{
+    border: none;
+    height: auto;
+    width: 230px;
+    padding: 12px;
+    font-size: 3px;
+    position: absolute;
+    bottom:6px;
+    left: 0px;
+    color:  rgb(255, 252, 252) ;
+ 
+}
+.movie-card-info:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color:  rgb(255, 254, 254) ;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
