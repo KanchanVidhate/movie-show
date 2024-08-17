@@ -2,11 +2,17 @@ import React from "react";
 import MovCards from './../../data.js';
 import MovieCard from "../../components/MovieCard/MovieCard.js";
 import "./Home.css";
+import img from './cinema.png';
+
 
 function Home() {
   return(
     <>
-    <h1 className="home">Movies Posters </h1>
+    <div className="main-margin">
+   
+    <h1 className="home">
+    <img src={img} alt="cinema" className="c-img"/>
+        Movies </h1>
     {
         MovCards.map((  movieObject,i )=>{
             const {
@@ -34,7 +40,9 @@ function Home() {
               
             )
     }
+    </div>
  </>
+ 
   )
 }
 export default Home

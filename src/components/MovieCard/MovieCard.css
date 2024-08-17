@@ -1,31 +1,77 @@
+.main-contain{
+    display:inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
 .movie-card{
-    height: 350px;
+    height: 450px;
     width: 250px;
-    border: solid;
-    border-radius: 20px;
+    border: 2px solid;
+    border-radius: 10px 10px 6px 6px;
+    margin: 10px;
+    flex-direction: row-reverse;
+}
+.movie-card:hover{
+    border: 2px solid #FFD700;
+    cursor: pointer;
+    
     
 }
+
 .img{
-    height: 100%;
+    height: 50%;
     width: 100%;
     object-fit: cover;
-    border-radius: 19px;
+    border-radius: 10px 10px 2px 2px;
+    margin: 0px;
+    padding: 0px;
+    
 }
+
+
+
 .movie-card-info{
-    border: none;
-    height: auto;
-    width: 230px;
-    padding: 12px;
-    font-size: 3px;
-    position: absolute;
-    bottom:6px;
-    left: 0px;
-    color:  rgb(255, 252, 252) ;
- 
+    height: 46%;
+    width: 96%;
+    border-radius: 0px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-top:-5px;
+    font-size: 2px;
+    padding: 4px;
+    padding-left: 6px;
+    color: aliceblue;
+   
 }
 .movie-card-info:hover{
     background-color: rgba(0, 0, 0, 0.8);
     color:  rgb(255, 254, 254) ;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.7s ease-in-out;
+    margin-top: 0px;
+      border-radius: 10px 10px 6px 6px;
+    font-size: 12px;
+    padding: 4px;
+    padding-left: 6px;
+    color: aliceblue;
+    animation: fadein .5s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    
+    
+}
+
+.effect{
+opacity: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    animation: fadeout .5s;
 }

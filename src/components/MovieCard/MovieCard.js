@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./MovieCard.css";
 
 
+
 function MovieCard ({
     name,
     release_date,
@@ -14,22 +15,26 @@ function MovieCard ({
 }){
     return(
         <>
-        <div className="movie-card">
+        <div className="main-contain">
+            
+       <div className="movie-card ">
             <Link to={`/movie/${id}`}>
                 <img src={img} alt={name} className="img" />
             </Link>
-            <div className="movie-card-info">
+            <p className="movie-card-info">
                 <h3>{name}</h3>
                 <p>Directed By: {directedBy}</p>
                 <p>Written By: {writenBy}</p>
                 <p>Produced By: {producedBy}</p>
                 <p>Release Date: {release_date}</p>
-            </div>
+            </p>
+        </div>
         </div>
         
         </>
     )
 }
+
 
 
 export default MovieCard;
